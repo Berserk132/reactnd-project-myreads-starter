@@ -10,7 +10,6 @@ class SearchResult extends Component{
 
     render() {
 
-        console.log(this.props.booksToShow)
         const {booksToShow, onMove} = this.props
 
         return(

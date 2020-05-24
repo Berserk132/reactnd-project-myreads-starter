@@ -60,9 +60,10 @@ class BooksApp extends React.Component {
         BooksAPI.search(query)
             .then(res => {
                 if (res.length > 0) {
-                    res.map(book => {
+                    res.map((book) => {
 
                         book.shelf = "none"
+                        return book
                     })
                     this.setState({
                             searchedBook: res.map((b) => {

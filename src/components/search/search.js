@@ -10,6 +10,7 @@ class Search extends Component{
 
     handleInput = (event) => {
         const newValue = event.target.value
+        
         this.setState(
             {
                 value: newValue
@@ -23,6 +24,7 @@ class Search extends Component{
         else if (newValue.length === 0){
             this.props.onClear()
         }
+        
     }
 
 
@@ -30,6 +32,7 @@ class Search extends Component{
     render() {
 
          const {booksToShow, onMove, books} = this.props
+
 
         return(
             <div className="search-books">
